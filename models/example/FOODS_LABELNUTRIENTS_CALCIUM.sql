@@ -61,7 +61,3 @@ select
 from __dbt__cte__FOODS_LABELNUTRIENTS_CALCIUM_AB3
 -- CALCIUM at foods/labelNutrients/calcium from "DB".AGRI."FOODS_LABELNUTRIENTS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_LABELNUTRIENTS_CALCIUM" cluster by (_AIRBYTE_EMITTED_AT);
