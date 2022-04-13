@@ -180,7 +180,3 @@ select
 from __dbt__cte__FOODS_FOODUPDATELOG_AB3
 -- FOODUPDATELOG at foods/foodUpdateLog from "DB".AGRI."FOODS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_FOODUPDATELOG" cluster by (_AIRBYTE_EMITTED_AT);
