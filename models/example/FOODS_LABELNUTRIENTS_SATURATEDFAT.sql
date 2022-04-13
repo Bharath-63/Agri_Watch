@@ -61,7 +61,3 @@ select
 from __dbt__cte__FOODS_LABELNUTRIENTS_SATURATEDFAT_AB3
 -- SATURATEDFAT at foods/labelNutrients/saturatedFat from "DB".AGRI."FOODS_LABELNUTRIENTS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_LABELNUTRIENTS_SATURATEDFAT" cluster by (_AIRBYTE_EMITTED_AT);
