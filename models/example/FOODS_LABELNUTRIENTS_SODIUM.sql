@@ -61,7 +61,3 @@ select
 from __dbt__cte__FOODS_LABELNUTRIENTS_SODIUM_AB3
 -- SODIUM at foods/labelNutrients/sodium from "DB".AGRI."FOODS_LABELNUTRIENTS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_LABELNUTRIENTS_SODIUM" cluster by (_AIRBYTE_EMITTED_AT);
