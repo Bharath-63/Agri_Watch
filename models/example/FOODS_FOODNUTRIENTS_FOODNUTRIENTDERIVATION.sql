@@ -75,7 +75,3 @@ select
 from __dbt__cte__FOODS_FOODNUTRIENTS_FOODNUTRIENTDERIVATION_AB3
 -- FOODNUTRIENTDERIVATION at foods/foodNutrients/foodNutrientDerivation from "DB".AGRI."FOODS_FOODNUTRIENTS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_FOODNUTRIENTS_FOODNUTRIENTDERIVATION" cluster by (_AIRBYTE_EMITTED_AT);
