@@ -95,7 +95,3 @@ select
 from __dbt__cte__FOODS_FOODNUTRIENTS_AB3
 -- FOODNUTRIENTS at foods/foodNutrients from "DB".AGRI."FOODS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_FOODNUTRIENTS" cluster by (_AIRBYTE_EMITTED_AT);
