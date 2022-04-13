@@ -61,7 +61,3 @@ select
 from __dbt__cte__FOODS_LABELNUTRIENTS_FIBER_AB3
 -- FIBER at foods/labelNutrients/fiber from "DB".AGRI."FOODS_LABELNUTRIENTS"
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS_LABELNUTRIENTS_FIBER" cluster by (_AIRBYTE_EMITTED_AT);
