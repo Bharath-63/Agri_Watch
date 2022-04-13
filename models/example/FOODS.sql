@@ -201,7 +201,3 @@ select
 from __dbt__cte__FOODS_AB3
 -- FOODS from "DB".AGRI._AIRBYTE_RAW_FOODS
 where 1 = 1
-
-            ) order by (_AIRBYTE_EMITTED_AT)
-      );
-    alter table "DB".AGRI."FOODS" cluster by (_AIRBYTE_EMITTED_AT);
